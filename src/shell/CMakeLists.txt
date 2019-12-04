@@ -2,6 +2,9 @@ add_executable(lean lean.cpp server.cpp leandoc.cpp)
 target_link_libraries(lean leanstatic)
 install(TARGETS lean DESTINATION bin)
 
+add_executable(lean_token_count token_count.cpp)
+target_link_libraries(lean_token_count leanstatic)
+
 add_executable(lean_js lean_js.cpp lean_js_main.cpp server.cpp leandoc.cpp)
 if(${EMSCRIPTEN})
     # This currently fails to build in the docker container
