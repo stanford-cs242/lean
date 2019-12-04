@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
   }
   std::istream istr(&fb);
 
-  std::vector<std::string> new_tokens = {"∨", "∃", "↦", "*"};
+  std::vector<std::string> new_tokens = {"∨", "∃", "↦", "*", "=", "ℕ", "∧"};
   lean::initialize();
   lean::environment env = lean::mk_environment();
   for (std::string& tok : new_tokens) {
