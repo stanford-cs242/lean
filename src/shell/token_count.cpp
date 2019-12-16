@@ -48,7 +48,7 @@ int main(int argc, char** argv) {
   }
 
   count += buffer.size();
-  std::cout << "Number of tokens: " << count << std::endl;
+  std::cout << count << std::endl;
 
   return 0;
 }
